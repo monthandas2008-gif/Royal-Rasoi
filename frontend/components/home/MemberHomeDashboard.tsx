@@ -4,9 +4,9 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { 
-  Crown, Calendar, Clock, Sparkles, ChefHat, MapPin, Phone, 
-  Star, ChevronRight, ArrowRight, ShieldCheck, Heart, Coffee, 
+import {
+  Crown, Calendar, Clock, Sparkles, ChefHat, MapPin, Phone,
+  Star, ChevronRight, ArrowRight, ShieldCheck, Heart, Coffee,
   UtensilsCrossed, Wine, PartyPopper, Flame, Compass, BellRing
 } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
@@ -62,7 +62,7 @@ export default function MemberHomeDashboard() {
       category: 'Slow-Cooked Dum',
       time: 'Serves 2-3 Persons',
       spice: 'Medium Spicy',
-      image: 'https://images.unsplash.com/photo-1563379091339-03246963d96c?w=600&auto=format&fit=crop&q=80',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr53iQ5lJg7Swb5m2M14EHAK4ff5B0sP5BhESo59a23A&s',
       desc: 'Infused with royal Kashmiri saffron, crispy caramelized onions and aged Basmati.'
     },
     {
@@ -78,16 +78,16 @@ export default function MemberHomeDashboard() {
       category: 'Dessert Masterpiece',
       time: 'Chilled Sweet Finale',
       spice: 'Saffron & Rose',
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=80',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8H3-Z6QeTAASyRDGr566paAoaoJ0WAVYvxQm_2WxPDA&s=10',
       desc: 'Thick condensed milk kulfi paired with rose vermicelli and delicate tukmaria basil seeds.'
     }
   ];
 
   return (
     <div className="min-h-screen bg-[#FAF9F0] text-[#292524] pt-24 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto selection:bg-[#D4AF37]/30">
-      
+
       {/* ── MEMBER HERO GREETING BANNER ─────────────────────────────────── */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}

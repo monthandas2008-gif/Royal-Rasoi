@@ -166,7 +166,7 @@ const AUTHENTIC_MENU_ITEMS = [
     is_veg: false,
     spice_level: 'medium',
     description: 'Slow-cooked artisanal dum biryani prepared with bone-in tender mutton marinated in rich spices and mint.',
-    image_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAUKxBzZ_HndwxKHjiyyfg19T-uJ2eKuegcd6TuZnIwiXNiuZRawHWeIv5&s=10'
+    image_url: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&auto=format&fit=crop&q=80'
   },
   {
     id: 15,
@@ -176,7 +176,7 @@ const AUTHENTIC_MENU_ITEMS = [
     is_veg: true,
     spice_level: 'mild',
     description: 'Fragrant Basmati rice cooked with fresh farm carrots, beans, peas, cottage cheese and whole spices.',
-    image_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj22-TLBBmDCmL4fdTyqTALjac_5gHK5vfNBDquWiKhtlCD7ULsAfXw14&s=10'
+    image_url: 'https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&auto=format&fit=crop&q=80'
   },
 
   // Tandoori Breads
@@ -198,7 +198,7 @@ const AUTHENTIC_MENU_ITEMS = [
     is_veg: true,
     spice_level: 'mild',
     description: 'Fresh tandoori naan encrusted with minced roasted garlic cloves, nigella seeds and chopped coriander.',
-    image_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSQCsjTgjFIBx-6tupHdYowJClovHbU5Gv7AI-4MfByydcPk0XGstiZ2U&s=10'
+    image_url: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600&auto=format&fit=crop&q=80'
   },
   {
     id: 18,
@@ -208,7 +208,7 @@ const AUTHENTIC_MENU_ITEMS = [
     is_veg: true,
     spice_level: 'mild',
     description: 'Multi-layered flaky whole wheat paratha glazed with pure desi ghee.',
-    image_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR32LyKLL4Oq1gGxttWYJmgbYbfFLNTI-DZMQda_eSG1Q&s=10'
+    image_url: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=80'
   },
 
   // Desserts
@@ -220,7 +220,7 @@ const AUTHENTIC_MENU_ITEMS = [
     is_veg: true,
     spice_level: 'mild',
     description: 'Golden fried reduced milk spheres immersed warm in rose and green cardamom scented sugar syrup.',
-    image_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJE2WWFbzQ4EOZM67Lk5yFhkpHmiChvYfDOtNvpiKbdw&s=10'
+    image_url: 'https://images.unsplash.com/photo-1601303516534-bf4ec6b4a19e?w=600&auto=format&fit=crop&q=80'
   },
   {
     id: 20,
@@ -230,7 +230,7 @@ const AUTHENTIC_MENU_ITEMS = [
     is_veg: true,
     spice_level: 'mild',
     description: 'Traditional dense pistachio kulfi served over sweet vermicelli, tukmaria seeds and rose syrup.',
-    image_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStT3fZE_zFjE6nQvHdf-sxrTR7JtUdMv5wf1HuLGmC_Hf5AuxtXTGkz-iB&s=10'
+    image_url: 'https://images.unsplash.com/photo-1528975604071-b4dc52a2d18c?w=600&auto=format&fit=crop&q=80'
   },
 
   // Beverages
@@ -242,7 +242,7 @@ const AUTHENTIC_MENU_ITEMS = [
     is_veg: true,
     spice_level: 'mild',
     description: 'Thick hand-churned yogurt blended with Alphonso mango pulp, Kashmiri saffron and slivered pistachios.',
-    image_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYFDnX3HyMqV4vDCjlV5M1r2nGb2Y10ewhr0H2BZxtKElMtdI4wkUUwXE&s=10'
+    image_url: 'https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=600&auto=format&fit=crop&q=80'
   },
   {
     id: 22,
@@ -309,11 +309,10 @@ export default function MenuPage() {
             <button
               key={cat.id}
               onClick={() => setActiveCategory(cat.id)}
-              className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all ${
-                activeCategory === cat.id
-                  ? 'bg-[#1A5C1A] text-white border-[#1A5C1A]'
-                  : 'bg-white text-stone-700 border-stone-300 hover:border-[#D4AF37]'
-              }`}
+              className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all ${activeCategory === cat.id
+                ? 'bg-[#1A5C1A] text-white border-[#1A5C1A]'
+                : 'bg-white text-stone-700 border-stone-300 hover:border-[#D4AF37]'
+                }`}
             >
               {cat.label}
             </button>
