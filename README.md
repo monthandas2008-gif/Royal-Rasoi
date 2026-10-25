@@ -194,12 +194,3 @@ curl -X POST "http://127.0.0.1:8000/chatbot/message" \
 
 ## 📄 License
 This project is licensed under the [MIT License](LICENSE).
-
----
-
-## 👑 Royal Rasoi Dining Information
-- **Location**: Shop 12, Shivaji Nagar Main Road, Boisar, Palghar - 401501
-- **Hours (12-Hour Format)**: 
-  - Lunch Session: `12:00 PM – 03:30 PM`
-  - Dinner Session: `07:00 PM – 11:30 PM`
-- **Contact**: `+91 98765 43210`
